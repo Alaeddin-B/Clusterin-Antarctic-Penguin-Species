@@ -15,7 +15,8 @@ This project applies **unsupervised machine learning techniques** to identify di
 - ✅ **Unsupervised Learning**: Implemented K-Means clustering algorithm
 - ✅ **Model Optimization**: Used Elbow Method to determine optimal number of clusters (k=3)
 - ✅ **Dimensionality Analysis**: Applied PCA for feature importance analysis
-- ✅ **Data Visualization**: Created a 3D visualization for cluster interpretation
+- ✅ **Data Visualization**: Created both static (Matplotlib) and interactive (Plotly) 3D visualizations
+- ✅ **Interactive Analysis**: Implemented Plotly for dynamic cluster exploration
 - ✅ **Feature Engineering**: Converted categorical sex variable to numerical format
 
 ## 📊 Dataset Information
@@ -78,10 +79,13 @@ Based on cluster center analysis, features are ranked by their importance in dis
 2. **Moderate Importance**: [Secondary discriminating features]
 3. **Lower Importance**: [Supporting features]
 
-### 3D Visualization Insights
-- **Axes Used**: Flipper Length, Culmen Depth, Culmen Length
+### Visualization Insights
+- **Static 3D Plot (Matplotlib)**: Professional publication-ready visualization
+- **Interactive 3D Plot (Plotly)**: Dynamic exploration with rotation, zoom, and hover details
+- **Axes Used**: Flipper Length, Culmen Depth, Culmen Length  
 - **Color Coding**: Each cluster represented with distinct colors
 - **Pattern**: Clear geometric separation between the three species groups
+- **Interactivity**: Toggle clusters, explore data points, and examine cluster boundaries
 
 ## 🛠️ Technical Implementation
 
@@ -93,17 +97,21 @@ import numpy as np
 
 # Visualization
 import matplotlib.pyplot as plt
+import seaborn as sns
+import plotly.express as px
 
 # Machine Learning
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
+from sklearn.decomposition import PCA
 from sklearn.decomposition import PCA
 ```
 
 ### Key Code Implementations
 - **Data Scaling Pipeline**: StandardScaler for feature normalization
 - **Elbow Method Loop**: Automated optimal k selection
-- **3D Visualization**: Custom matplotlib 3D scatter plot
+- **Static 3D Visualization**: Custom matplotlib 3D scatter plot
+- **Interactive 3D Visualization**: Plotly 3D scatter plot with hover functionality
 - **Feature Analysis**: Cluster center interpretation
 
 ## 📁 Project Structure
@@ -141,7 +149,8 @@ pip install -r requirements.txt
 - **Python Programming**
 - **Pandas for Data Manipulation**
 - **Scikit-learn for Machine Learning**
-- **Matplotlib/Seaborn for Visualization**
+- **Matplotlib/Seaborn for Static Visualization**
+- **Plotly for Interactive Visualization**
 - **NumPy for Numerical Computing**
 
 ### Analytical Skills
@@ -163,10 +172,11 @@ This project enhanced my understanding of:
 ## 🔮 Future Improvements
 
 - [ ] **Advanced Clustering**: Compare with hierarchical clustering, DBSCAN
-- [ ] **Interactive Visualizations**: Implement Plotly for enhanced exploration
+- [x] **Interactive Visualizations**: ✅ Implemented Plotly for enhanced exploration  
 - [ ] **Statistical Validation**: Add silhouette analysis for cluster quality
 - [ ] **Feature Selection**: Implement automated feature importance selection
 - [ ] **Model Comparison**: Benchmark against other unsupervised algorithms
+- [ ] **Dashboard Creation**: Build interactive Plotly Dash application
 
 ## 📚 References & Acknowledgments
 
