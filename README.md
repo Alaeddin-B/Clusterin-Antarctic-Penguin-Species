@@ -3,7 +3,7 @@
 **Unsupervised Machine Learning Project | Data Science Portfolio**
 
 ![Penguin Species](https://imgur.com/orZWHly.png)
-*Source: @allison_horst https://github.com/allisonhorst/penguins*
+*Source: @allison_horst <https://github.com/allisonhorst/penguins>*
 
 ## 📋 Project Overview
 
@@ -38,29 +38,34 @@ This project applies **unsupervised machine learning techniques** to identify di
 ## 🔬 Methodology
 
 ### 1. Data Preprocessing
+
 - **Categorical Encoding**: Converted `sex` variable using category codes
 - **Feature Scaling**: Applied StandardScaler to normalize all numerical features
 - **Data Structure**: Maintained original dataframe while creating scaled version for modeling
 
 ### 2. Optimal Cluster Selection
+
 - **Method**: Elbow Method
 - **Range Tested**: k = 1 to 10 clusters
 - **Result**: Optimal k = 3 (matches expected number of penguin species)
 - **Visualization**: Clear elbow pattern observed in inertia plot + PCA feature inertia
 
 ### 3. Clustering Implementation
+
 - **Algorithm**: K-Means Clustering
-- **Parameters**: 
+- **Parameters**:
   - n_clusters = 3
   - random_state = 42 (for reproducibility)
 - **Feature Set**: All 5 preprocessed features
 
 ### 4. Feature Importance Analysis
+
 - **Method**: Analysis of cluster center coordinates
 - **Approach**: Calculated absolute mean of cluster centers across all features
 - **Result**: Ranked features by their contribution to cluster separation
 
 ### 5. Dimensionality Analysis
+
 - **Technique**: Principal Component Analysis (PCA)
 - **Purpose**: Understand feature variance contribution
 - **Visualization**: Bar chart showing explained variance per component
@@ -68,11 +73,13 @@ This project applies **unsupervised machine learning techniques** to identify di
 ## 📈 Results & Insights
 
 ### Clustering Performance
+
 - **Number of Clusters Identified**: 3
 - **Cluster Distribution**: Successfully separated penguins into distinct groups
 - **Visual Validation**: 3D scatter plot shows clear cluster separation
 
 ### Feature Importance Ranking
+
 Based on cluster center analysis, features are ranked by their importance in distinguishing penguin groups:
 
 1. **Most Important Features**: [Determined from cluster analysis]
@@ -80,6 +87,7 @@ Based on cluster center analysis, features are ranked by their importance in dis
 3. **Lower Importance**: [Supporting features]
 
 ### Visualization Insights
+
 - **Static 3D Plot (Matplotlib)**: Professional publication-ready visualization
 - **Interactive 3D Plot (Plotly)**: Dynamic exploration with rotation, zoom, and hover details
 - **Axes Used**: Flipper Length, Culmen Depth, Culmen Length  
@@ -90,6 +98,7 @@ Based on cluster center analysis, features are ranked by their importance in dis
 ## 🛠️ Technical Implementation
 
 ### Libraries & Tools Used
+
 ```python
 # Data Manipulation & Analysis
 import pandas as pd
@@ -108,6 +117,7 @@ from sklearn.decomposition import PCA
 ```
 
 ### Key Code Implementations
+
 - **Data Scaling Pipeline**: StandardScaler for feature normalization
 - **Elbow Method Loop**: Automated optimal k selection
 - **Static 3D Visualization**: Custom matplotlib 3D scatter plot
@@ -115,6 +125,7 @@ from sklearn.decomposition import PCA
 - **Feature Analysis**: Cluster center interpretation
 
 ## 📁 Project Structure
+
 ```
 DS_project10(UnsupervisedML)/
 ├── notebook.ipynb          # Main analysis notebook
@@ -127,11 +138,14 @@ DS_project10(UnsupervisedML)/
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - Python 3.7 or higher
 - pip package manager
 
 ### Installation
+
 Install required dependencies:
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -139,6 +153,7 @@ pip install -r requirements.txt
 ## 🚀 Skills Demonstrated
 
 ### Data Science Skills
+
 - **Exploratory Data Analysis (EDA)**
 - **Feature Engineering & Preprocessing**
 - **Unsupervised Machine Learning**
@@ -146,6 +161,7 @@ pip install -r requirements.txt
 - **Statistical Analysis**
 
 ### Technical Skills
+
 - **Python Programming**
 - **Pandas for Data Manipulation**
 - **Scikit-learn for Machine Learning**
@@ -154,6 +170,7 @@ pip install -r requirements.txt
 - **NumPy for Numerical Computing**
 
 ### Analytical Skills
+
 - **Pattern Recognition**
 - **Statistical Interpretation**
 - **Data-Driven Decision Making**
@@ -162,6 +179,7 @@ pip install -r requirements.txt
 ## 🎓 Learning Outcomes
 
 This project enhanced my understanding of:
+
 - **Unsupervised learning principles** and when to apply them
 - **Clustering algorithms** and their parameter optimization
 - **Feature scaling importance** in distance-based algorithms
@@ -183,7 +201,7 @@ This project enhanced my understanding of:
 - **Data Source**: Palmer Station, Antarctica LTER
 - **Original Collector**: Dr. Kristen Gorman
 - **Artwork Credit**: @allison_horst
-- **Dataset Repository**: https://github.com/allisonhorst/penguins
+- **Dataset Repository**: <https://github.com/allisonhorst/penguins>
 
 ---
 
